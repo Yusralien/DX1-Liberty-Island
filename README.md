@@ -34,6 +34,6 @@ The scan identified ports 80, 5901, and 7778 as opens, indicating that the serve
 
 Opening the webpage with firefox , "UNATCO" webpage is shown
 
-![backbox-2022-10-25-15-01-58](https://user-images.githubusercontent.com/87742813/197808716-e39ec67d-87c4-411d-a487-3d7a5c908d6a.png)
+<img src="https://github.com/Yusralien/DX1-Liberty-Island/blob/main/webpage.png" width="250" height="250" /> 
 
 
