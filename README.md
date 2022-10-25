@@ -21,8 +21,7 @@ PORT     STATE    SERVICE   VERSION
 |_http-server-header: Apache/2.4.41 (Ubuntu)
 |_http-title: United Nations Anti-Terrorist Coalition
 5901/tcp open     vnc       VNC (protocol 3.8)
-|_ssl-cert: ERROR: Script execution failed (use -d to debug)![backbox-2022-10-25-15-01-58](https://user-images.githubusercontent.com/87742813/197804857-dd8e1776-a10a-4bdf-ab04-6d314acc579b.png)
-
+|_ssl-cert: ERROR: Script execution failed (use -d to debug)
 |_ssl-date: ERROR: Script execution failed (use -d to debug)
 |_sslv2: ERROR: Script execution failed (use -d to debug)
 |_vnc-info: ERROR: Script execution failed (use -d to debug)
@@ -35,5 +34,11 @@ The scan identified ports 80, 5901, and 7778 as opens, indicating that the serve
 Opening the webpage with firefox , "UNATCO" webpage is shown
 
 <img src="https://github.com/Yusralien/DX1-Liberty-Island/blob/main/webpage.png" width="1920" height="500" /> 
+
+
+In order to enumerate webpage, we have to access /robots.txt. 
+
+
+
 
 
