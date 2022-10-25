@@ -33,7 +33,8 @@ The scan identified ports 80, 5901, and 7778 as opens, indicating that the serve
 
 Opening the webpage with firefox , "UNATCO" webpage is shown
 
-<img src="https://github.com/Yusralien/DX1-Liberty-Island/blob/main/webpage.png" width="1640" height="500" /> 
+![webpage](https://user-images.githubusercontent.com/87742813/197826740-79595df1-cc7a-4cf1-9c98-da30aa18c1ed.png)
+
 
 
 In order to enumerate webpage, we have to access /robots.txt. Below is the result /robots.txt accessed.
