@@ -36,7 +36,13 @@ Opening the webpage with firefox , "UNATCO" webpage is shown
 <img src="https://github.com/Yusralien/DX1-Liberty-Island/blob/main/webpage.png" width="1920" height="500" /> 
 
 
-In order to enumerate webpage, we have to access /robots.txt. 
+In order to enumerate webpage, we have to access /robots.txt. Below is the result /robots.txt accessed.
+```
+http://10.10.116.49/robots.txt
+# Disallow: /datacubes # why just block this? no corp should crawl our stuff - alex
+```
+Lets enumerate the dir given which `/datacubes`.
+
 
 
 
