@@ -76,7 +76,7 @@ Target: http://10.10.116.49/datacubes/
 
 We got 5 directories from the fuzzing and after exploring each directories, i found something that interest me on dir `/0451`.
 
-<img src="
+<img src="https://github.com/Yusralien/DX1-Liberty-Island/blob/main/0451.png" width="1920" height="500" />
 
 
 
