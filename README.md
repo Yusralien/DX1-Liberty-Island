@@ -29,11 +29,11 @@ PORT     STATE    SERVICE   VERSION
 ```
 The scan identified ports 80, 5901, and 7778 as opens, indicating that the server has ***tcp***, ***vnc*** and ***http*** services running. We also noticed that on port 80, we are given hint which lead us to enumerate the robots.txt
 
-# Webpage
+# Webpage Exploitation
 
 Opening the webpage with firefox , "UNATCO" webpage is shown
 
-<img src="https://github.com/Yusralien/DX1-Liberty-Island/blob/main/webpage.png" width="1920" height="500" /> 
+<img src="https://github.com/Yusralien/DX1-Liberty-Island/blob/main/webpage.png" width="1640" height="500" /> 
 
 
 In order to enumerate webpage, we have to access /robots.txt. Below is the result /robots.txt accessed.
@@ -41,7 +41,18 @@ In order to enumerate webpage, we have to access /robots.txt. Below is the resul
 http://10.10.116.49/robots.txt
 # Disallow: /datacubes # why just block this? no corp should crawl our stuff - alex
 ```
-Lets enumerate the dir given which `/datacubes`.
+Lets open the dir given which `/datacubes`.
+
+<img src="https://github.com/Yusralien/DX1-Liberty-Island/blob/main/datacubes.png" width="1640" height="500" />
+
+After deep exploring this directory , i made up with an assumption which is :
+
+* `/0000` given is a sign that we can fuzz the dir up to 0002 or any higher values.
+
+So ,i used to generate custom keywords/wordlists before fuzzing the directory by using `Crunch` tool.
+
+
+
 
 
 
