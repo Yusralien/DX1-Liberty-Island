@@ -154,6 +154,7 @@ BOOM 2.0!! we got root access.
 You can get the root.txt by replace `id` to `cat /root/root.txt`
 
 Thats all from me, 
+
 TBH, im doing this room about 3 hours(describing how noob i am...k bye
 
 
