@@ -44,7 +44,8 @@ http://10.10.116.49/robots.txt
 ```
 Lets open the dir given which `/datacubes`.
 
-<img src="https://github.com/Yusralien/DX1-Liberty-Island/blob/main/datacubes.png" width="1640" height="500" />
+![datacubes](https://user-images.githubusercontent.com/87742813/197827055-d79f8c57-e46b-40ae-a418-3e2ae800806f.png)
+
 
 After deep exploring this directory , i made up with an assumption which is :
 
@@ -54,7 +55,8 @@ So ,i used to generate custom keywords/wordlists before fuzzing the directory by
 ```
 crunch 4 4 0123456789 >> fuzz.txt 
 ```
-<img src="https://github.com/Yusralien/DX1-Liberty-Island/blob/main/crunch.png" width="650" height="250" />
+![crunch](https://user-images.githubusercontent.com/87742813/197827245-6fe1e022-0737-4138-bbd8-28523f380ad9.png)
+
 
 Then i'll fuzz the directory by using `dirsearch` tool with txt extension and supported with fuzz.txt wordlists. Below the following command :
 ```
