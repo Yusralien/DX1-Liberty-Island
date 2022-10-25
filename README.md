@@ -8,7 +8,7 @@ Hye, this is my first writeup doing root on vulnerable machine. Below i will pas
 # Port Scanning
 First thing we gonna do if we are doing root on vulnerable machine is **scanning for the ports of victim's  machine**.
 
-For port scanning, i have used `nmap` tools with the following command : 
+For port scanning, i have used `nmap` tool with the following command : 
 
 ```
 # nmap -sC -sV -v 10.10.116.49
@@ -49,8 +49,34 @@ After deep exploring this directory , i made up with an assumption which is :
 
 * `/0000` given is a sign that we can fuzz the dir up to 0002 or any higher values.
 
-So ,i used to generate custom keywords/wordlists before fuzzing the directory by using `Crunch` tool.
+So ,i used to generate custom keywords/wordlists before fuzzing the directory by using `Crunch` tool with the following command :
+```
+crunch 4 4 0123456789 >> fuzz.txt 
+```
+<img src="https://github.com/Yusralien/DX1-Liberty-Island/blob/main/crunch.png" width="650" height="250" />
 
+Then i'll fuzz the directory by using `dirsearch` tool with txt extension and supported with fuzz.txt wordlists. Below the following command :
+```
+# dirsearch -u http://ip_addr/datacubes -e .txt -w fuzz.txt
+
+Extensions: .txt | HTTP method: get | Threads: 10 | Wordlist size: 10000
+
+Error Log: /home/alien/.dirsearch/logs/errors-22-10-25_15-10-37.log
+
+Target: http://10.10.116.49/datacubes/
+
+[15:10:38] Starting: 
+[15:10:38] 301 -  321B  - /datacubes/0000  -> http://10.10.116.49/datacubes/0000/
+[15:10:39] 301 -  321B  - /datacubes/0011  ->  http://10.10.116.49/datacubes/0011/
+[15:10:40] 301 -  321B  - /datacubes/0068  ->  http://10.10.116.49/datacubes/0068/
+[15:10:41] 301 -  321B  - /datacubes/0103  ->  http://10.10.116.49/datacubes/0103/
+[15:10:44] 301 -  321B  - /datacubes/0233  ->  http://10.10.116.49/datacubes/0233/
+[15:10:49] 301 -  321B  - /datacubes/0451  ->  http://10.10.116.49/datacubes/0451/
+```
+
+We got 5 directories from the fuzzing and after exploring each directories, i found something that interest me on dir `/0451`.
+
+<img src="
 
 
 
